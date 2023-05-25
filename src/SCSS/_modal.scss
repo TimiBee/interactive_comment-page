@@ -1,0 +1,69 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+    visibility: hidden;
+    z-index: -1;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* OPEN/CLOSE MODAL */
+.show-modal {
+    visibility: visible;
+    z-index: 10;
+}
+
+.modal-container {
+    background: $bg-neutral;
+    width: 90%;
+    height: 15rem;
+    border-radius: 10px;
+    display: grid;
+    padding: 20px;
+    color: $text-color-sd;
+
+    h1 {
+        font-size: 1.3rem;
+        font-weight: weights(bold);
+    }
+
+    p {
+        font-weight: weights(medium);
+        color: $text-color-wk;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        grid-column-gap: 4%;
+        width: 100%;
+
+        div {
+            border-radius: 10px;
+            overflow: hidden;
+
+            button {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                font-size: 1.2rem;
+                color: $bg-neutral;
+                text-transform: uppercase;
+                
+                &.dont_delete {
+                     background: $text-color-wk;                  
+                }
+                &.delete {
+                    background:$btn_danger;
+                }
+            }
+        }
+    }
+}

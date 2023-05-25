@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:wght@100&family=Bellefair&family=Poppins:wght@100&family=Rubik:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $bg-primary;
+}
+
+main {   
+    font-family: 'Rubik', sans-serif;
+    display: grid; 
+    place-items:center;
+    justify-items:center;
+    grid-row-gap:20px;
+    padding: 30px 0;   
+  
+}
+
+button {
+    border-color: transparent;
+    background: transparent;
+    cursor:pointer;
+}

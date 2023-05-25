@@ -1,0 +1,30 @@
+$font-weights: ("regular": 400, "medium":500, "bold":700);
+
+@function weights($font-weight) {
+    @return map-get($font-weights, $font-weight)
+}
+
+
+@mixin user_btn($color) {
+    color: $color;
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: .03cm;
+    font-weight: weights(bold);
+    text-align: end;
+    font-family: inherit;
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}

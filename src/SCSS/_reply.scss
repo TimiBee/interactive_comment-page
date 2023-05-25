@@ -1,0 +1,17 @@
+section.container_for_replies {
+    display: grid;
+    justify-items: end;
+    border-left:1px solid $button_and_border;
+    margin-top:20px;
+    grid-gap:20px;
+    .no_reply {
+        color: $button_and_border;
+        // border-top:1px solid;
+        // border-bottom:1px solid;
+        width:100%;
+        text-align: center;
+    }
+}
+.reply {  
+    width: 90%;
+}
